@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кт1</title>
+</head>
+<body>
+    <script>
+        // Задача 1
+
+        let price = 10000;
+        let range = "day";
+
+        if(range == "month"){
+            russword = "месяц";
+        } else if(range == "day"){
+            russword = "день";
+        } else if(range == "week"){
+            russword = "неделю";
+        }
+        console.log(price + " Р в " + russword);
+
+        // Задача 2
+
+        let temp = 25;
+        let weather = "clear";
+        let activity;
+
+        if(temp >= 25 && weather == "clear"){
+            activity = "golf"; 
+        } else if ((temp >= 10 && temp <= 24) || weather == "cloudy"){
+            activity = "bowling";
+        } else{
+            activity = "hiking";
+        }
+        console.log(activity);
+
+        // Задача 3
+
+        let a = 2;
+        let b = 6;
+        let sign = "*";
+        let answer;
+        if(sign == "+"){
+            answer = a + b;
+        } else if(sign == "-"){
+            answer = a - b;
+        } else if(sign == "*"){
+            answer =  a * b;
+        } else if(sign == "/"){
+            if(b != 0){
+            answer = a / b;
+            } else{
+                answer = "Делить на 0 нельзя!";
+            }
+        } else{
+            answer = "неправильный оператор";
+        }
+        console.log(answer);
+
+        // Задача 4
+
+        let word = 'меню';
+        let result;
+        
+        if(Math.sqrt(word.length) % 1 == 0){
+            result = 1;
+        }
+        else{
+            result = 0;
+        }
+        console.log(result);
+    </script>
+</body>
+</html>
